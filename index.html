@@ -52,7 +52,8 @@
       <!-- 최종면접 -->
       <fieldset>
         <p>당신은 지금 한 기업의 최종 면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기 자신에게 해 주고 싶은 말은?</p>
-        <input type="textarea" name="lastInterview" placeholder="내 답변" required>
+        <textarea cols="90" rows="1" placeholder="내 답변"></textarea>
+
       </fieldset>
       <!-- 듣고 싶지 않은 질문 -->
       <fieldset>
@@ -68,13 +69,13 @@
       <fieldset>
         <p>취업을 희망하는 날짜를 선택해 주세요.</p>
         <label for="date" class="dateLabel">날짜</label>
-        <input type="date" required>
+        <input type="date" id="date" required>
       </fieldset>
       <!-- 업무 시작 시간 -->
       <fieldset>
         <p>업무를 시작하기에 가장 적당한 시간을 고르세요.</p>
         <label for="time" class="timeLabel">시간</label>
-        <input type="number" min="0" max="12" required>
+        <input type="number" id="time" min="0" max="12" required>
         :
         <input type="number" min="0" max="59" required>
         <select name="ampm" id="ampm" class="ampm">
@@ -83,10 +84,8 @@
         </select>
       </fieldset>
       <!-- 버튼 -->
-      <section class="button">
-        <input type="submit" class="submit" value="제출">
-        <input type="reset" class="reset" value="양식 지우기">
-      </section>
+      <input type="submit" class="submit" value="제출">
+      <input type="reset" class="reset" value="양식 지우기">
     </form>
   </div>
 </body>
